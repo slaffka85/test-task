@@ -67,8 +67,6 @@ public class EmployeeServlet extends HttpServlet {
                 employeeJson = br.readLine();
             }
 
-            System.out.println("employeeJson = " + employeeJson);
-
             Employee employee = objectMapper.readValue(employeeJson, Employee.class);
             employeeDao.save(employee);
             log.finest("save employee: " + employeeJson);
