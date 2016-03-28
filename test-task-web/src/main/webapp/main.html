@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript" src="resources/js/jquery-1.12.2.min.js" language="javascript"></script>
+    <script type="text/javascript" src="resources/js/json-serialization.js" language="javascript"></script>
+    <script type="text/javascript" src="resources/js/main.js" language="javascript"></script>
+    <link rel="stylesheet" type="text/css" href="resources/css/main.css">
+</head>
+<body>
+    <div>
+        <div>
+            <form id="employee_form" name="employee" method="post" action="employeeServletSync">
+                <label for="employee_name">Name</label><input id="employee_name" name="name" type="text" />
+                <br>
+                <label for="employee_email">Email</label><input id="employee_email" name="email" type="email" />
+                <br>
+                <label for="employee_phone">Phone</label><input id="employee_phone" name="phone" type="tel" />
+                <br>
+                <input id="add_employee_sbmt" type="submit" value="Add" />
+                <input id="add_employee_btn" type="button" value="Add (AJAX)" />
+            </form>
+        </div>
+        <table id="employee_table">
+        </table>
+    </div>
+</body>
+</html>
